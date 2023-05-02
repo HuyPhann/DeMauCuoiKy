@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.6.4.js"></script>
+    <script src="./js/bootstrap.js"></script>
+   
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="./image/istockphoto-513447945-612x612.jpg" alt="" id="anh">
+            <h2 class="tieude">Tư Vấn Online</h2>
+        </div>
+
+        <div class="menu">
+            <a href="" style="color: blue;">Trang chủ</a>
+           
+            <a href="" style="color: blue;" data-toggle="modal" data-target="#myModal">Đặt lịch</a>
+            <!-- <p style="color: blue;" data-toggle="modal" data-target="#myModal"></p> -->
+        </div>
+
+        <div>
+            <table class="table table-bordered" id="tbl">
+                <tr>
+                    <th>STT</th>
+                    <th>Mã bệnh nhân</th>
+                    <th>Mật khẩu</th>
+                    <th>Ngày khám</th>
+                    <th>Phụ thu dịch vụ</th>
+                    <th>Chuyên khoa</th>
+                </tr>
+            </table>
+        </div>
+            <h1>21115541-Phan Ngọc Huy</h1>
+        
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Đặt lịch khám online</h2>
+                    <button type="button" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="mabn"><b>Mã bệnh nhân</b></label>
+                        <input type="text" id="mabn" class="form-control input--name" required>
+                        <span id="idError">(*)BN-YYYYY</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mk"><b>Mật khẩu</b></label>
+                        <input type="text" id="mk" class="form-control input--name" required>
+                        <span id="idError2">(*)</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nk"><b>Ngày khám</b></label>
+                        <input type="date" id="nk" class="form-control " required>
+                        <span id="idError3">(*)</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for=""><b>Loại dịch vụ</b></label>
+                        <br>
+                        <input type="checkbox" value="yc1" id="yc1" >
+                        <label for="yc1" >Khám bệnh theo yêu cầu</label>
+                        <input type="checkbox" value="yc2" id="yc2">
+                        <label for="yc2" >Điều trị nội trú</label>
+                        <input type="checkbox" value="yc3" id="yc3">
+                        <label for="yc3" >Bác sĩ theo yêu cầu</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for=""><b>Chuyên khoa</b></label>
+                        <br>
+                        <select name="" id="ck" class="form-control">
+                            <option value="">Ngoại tổng quát</option>
+                            <option value="">Nội tổng quát</option>
+                            <option value="">Nhi</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn btn-primary"  id="datlich">Đặt lịch</button>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                </div>
+            
+            </div>
+            
+        </div>
+       
+    </div>
+
+    <script src="./js/myjs.js"></script>
+</body>
+</html>
